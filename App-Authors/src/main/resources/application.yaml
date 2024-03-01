@@ -1,0 +1,11 @@
+server:
+  port: 9090
+jakarta:
+  sql:
+    DataSource:
+      authorDataSource:
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        dataSource:
+          url: jdbc:postgresql://batyr.db.elephantsql.com/ovivrujz
+          user: ovivrujz
+          password: 4bEF39Pk3z3-o8HF9XwzU1AgtQPC-zB1
