@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/App-Authors" />
+            <option value="$PROJECT_DIR$/App-Books" />
+            <option value="$PROJECT_DIR$/Authors" />
           </set>
         </option>
       </GradleProjectSettings>

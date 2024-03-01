@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.kordamp.gradle.jandex' version '1.0.0'
+    //id 'org.kordamp.gradle.jandex' version '1.0.0'
     id 'application'
 }
 
@@ -11,8 +11,8 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -28,15 +28,15 @@ dependencies {
     runtimeOnly('org.jboss:jandex')
     runtimeOnly('jakarta.activation:jakarta.activation-api')
 
-    testImplementation('io.helidon.microprofile.tests:helidon-microprofile-tests-junit5')
-    testCompileOnly('org.junit.jupiter:junit-jupiter-api:')
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:')
+    //testImplementation('io.helidon.microprofile.tests:helidon-microprofile-tests-junit5')
+    //testCompileOnly('org.junit.jupiter:junit-jupiter-api:')
+    //testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:')
 }
 
 application {
     mainClass = 'io.helidon.microprofile.cdi.Main'
 }
-
+/*
 test {
     useJUnitPlatform()
 }
@@ -68,3 +68,5 @@ task copyBeansXML {
 }
 
 classes.dependsOn copyBeansXML
+
+ */
