@@ -1,4 +1,4 @@
-package com.distribuida.authors;
+package com.distribuida.appbooks;
 
 import jakarta.ws.rs.core.Application;
 import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;
@@ -8,7 +8,7 @@ import org.eclipse.microprofile.openapi.annotations.info.License;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "Authors API",
+                title = "Books API",
                 version = "1.0.1",
                 contact = @Contact(
                         name = "RoberthTroya",
@@ -20,5 +20,5 @@ import org.eclipse.microprofile.openapi.annotations.info.License;
                 )
         )
 )
-public class AuthorsApplication extends Application {
+public class BooksAplication extends Application {
 }

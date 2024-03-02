@@ -1,11 +1,19 @@
 server:
   port: 8080
 jakarta:
-  sql:
-    DataSource:
-      authorDataSource:
-        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
-        dataSource:
-          url: jdbc:postgresql://batyr.db.elephantsql.com/ovivrujz
-          user: ovivrujz
-          password: 4bEF39Pk3z3-o8HF9XwzU1AgtQPC-zB1
+  persistence:
+    default:
+      provider: org.eclipse.persistence.jpa.PersistenceProvider
+      jta-data-soruce: jdbc/postgres
+      properties:
+        eclipselink:
+          liggin:
+            level: FINE
+db:
+  datasources:
+    -
+      name: jdbc/postgres
+      db-kind: postgresql
+      username: ovivrujz
+      password: 4bEF39Pk3z3-o8HF9XwzU1AgtQPC-zB1
+      jdbc-url: jdbc:postgresql://batyr.db.elephantsql.com/ovivrujz

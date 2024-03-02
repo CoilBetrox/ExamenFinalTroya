@@ -7,7 +7,7 @@
     <persistence-unit name="appRest" transaction-type="JTA">
 
         <jta-data-source>authorDataSource</jta-data-source>
-        <class>com.distribuida.authors.db.Author</class>
+        <class>com.distribuida.appbooks.db.Book</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>

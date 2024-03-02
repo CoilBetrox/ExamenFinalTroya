@@ -1,2 +1,19 @@
 server:
-  port: 9090
+  port: 8080
+jakarta:
+  persistence:
+    default:
+      provider: org.eclipse.persistence.jpa.PersistenceProvider
+      jta-data-soruce: jdbc/postgres
+      properties:
+        eclipselink:
+          liggin:
+            level: FINE
+db:
+  datasources:
+    -
+      name: jdbc/postgres
+      db-kind: postgresql
+      username: ovivrujz
+      password: 4bEF39Pk3z3-o8HF9XwzU1AgtQPC-zB1
+      jdbc-url: jdbc:postgresql://batyr.db.elephantsql.com/ovivrujz
